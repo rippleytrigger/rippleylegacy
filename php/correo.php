@@ -1,52 +1,32 @@
 
  <?php
 
-
  	extract($_POST);
-
- 	 $mensaje_c = "Nombre:".$nombre."\n"."\n";
- 	 $mensaje_c .= "Correo:"." ".$correo."\n"."\n";
- 	 $mensaje_c .= "Número:".$numero."\n"."\n";
- 	 $mensaje_c .= "Mensaje:".$mensaje."\n"."\n";
-
+ 	 $mensaje_correo = "Nombre:".$nombre."\n"."\n";
+ 	 $mensaje_correo .= "Correo:"." ".$correo."\n"."\n";
+ 	 $mensaje_correo .= "Número:".$numero."\n"."\n";
+ 	 $mensaje_correo .= "Mensaje:".$mensaje."\n"."\n";
 
  	 $email_principal = "info@rippleylegacy.com.ve";
-
-
  
-if(mail($email_principal,$asunto,$mensaje_c))
-{ 
+	if(mail($email_principal,$asunto,$mensaje_correo))
+	{ 
 ?>
-	<p id="server"><?php echo $_SERVER['HTTP_HOST']; ?></p>
+		<p id="server"><?php echo $_SERVER['HTTP_HOST']; ?></p>
 	
-	<script type="text/javascript">
+		<script type="text/javascript">
 
-		var server = document.getElementById('server').innerHTML;
-		
-		window.location = "http://" + server + "?s=1#contacto";
-
-
-	</script>
+			var server = document.getElementById('server').innerHTML;
+			window.location = "http://" + server + "?s=1#contacto";
+		</script>
 
 <?php
-
-}else{ 
-
+	}else{ 
 ?>
 	<script type="text/javascript">
-
 		var server = document.getElementById('server').innerHTML;
-		
 		window.location = "http://" + server + "?s=2#contacto";
-
-
 	</script>
-
 <?php
-  
-} 
-
-
-
-
+	} 
 ?>

@@ -5,11 +5,7 @@
 
 	//Variables		
 
-		//Nav_navegate - variables
-
-		var ul = $("#nav_links").find("a");
-		var scroll_t;
-		var a = $("#mynavbar")	
+			
 		
 
 		//Window modal - Habilidades
@@ -178,50 +174,41 @@
 
 		function nav_navigate()
 		{
-			
+			//Nav_navegate - variables
+			var navbarAnchors = $("#nav_links").find("a");
 
-			ul.on("click",function(event)
+			navbarAnchors.on("click",function(event)
 			{
-				
-
-				var tar = event.target.id;
-
-				console.log(tar)
-
-				switch(tar)
+				var navAnchorTarget = event.target.id;
+				var scrollTarget;
+				switch(navAnchorTarget)
 				{
 					case "nav_link_1":
-					scroll_t = $('#inicio').offset();
-					$("html, body").animate({scrollTop: scroll_t.top}, 1500);
+					scrollTarget = $('#inicio').offset();
+					$("html, body").animate({scrollTop: scrollTarget.top}, 500);
 					break;
 
 					case "nav_link_2":
-					scroll_t =  $('#quien_soy').offset();
-					$("html, body").animate({scrollTop: scroll_t.top}, 1500);
+					scrollTarget =  $('#quien_soy').offset();
+					$("html, body").animate({scrollTop: scrollTarget.top}, 500);
 					break;
 
 					case "nav_link_3":
-					scroll_t =  $('#servicios').offset();
-					$("html, body").animate({scrollTop: scroll_t.top}, 1500);
+					scrollTarget =  $('#servicios').offset();
+					$("html, body").animate({scrollTop: scrollTarget.top}, 500);
 					break;
 
 					case "nav_link_4": 
-					scroll_t =  $('#Portafolio').offset();
-					$("html, body").animate({scrollTop: scroll_t.top}, 1500);
+					scrollTarget =  $('#Portafolio').offset();
+					$("html, body").animate({scrollTop: scrollTarget.top}, 500);
 					break;
 
 					case "nav_link_5": 
-					scroll_t =  $('#contacto').offset();
-					$("html, body").animate({scrollTop: scroll_t.top}, 1500);
+					scrollTarget =  $('#contacto').offset();
+					$("html, body").animate({scrollTop: scrollTarget.top}, 500);
 					break;
 
-					/*default:
-					event.preventDefault();*/
-
 				}
-
-				//console.log(scroll_t.top)
-
 			})
 		}
 

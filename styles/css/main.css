@@ -1,0 +1,741 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p, ol, ul {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+/* Barra de Navegacion */
+
+.navbar > .container-fluid{
+    box-shadow: 0px 2px 30px 0px black; 
+}
+
+.navbar-alternative
+{
+  background-color: #2fa4e7;
+  border-color: #1995dc;
+}
+
+.navbar-alternative .navbar-nav > li > a 
+{
+    color: white;
+}
+    
+.navbar-alternative .navbar-toggle 
+{
+  background: black;
+}
+
+.navbar-toggle .icon-bar
+{
+  color: white;
+  background: white;
+}
+
+
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav 
+{
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.navbar-alternative li:not(.active) a:hover
+{
+  background: inherit;
+  color: black;
+}
+
+.navbar-alternative .active a:hover
+{
+  background: #006ad1; 
+  /*color: #fefefe;*/
+}
+
+
+                /* Colores - Nav li*/
+                .active > a
+                {
+                    border-bottom:  1px solid white;
+                    background: #006ad1;
+                }
+
+                .active > #nav_link_1
+                {
+                    border-left: 3px solid red;
+                } 
+
+                .active > #nav_link_2
+                {
+                    border-left: 3px solid yellow;
+                }
+
+                .active > #nav_link_3
+                {
+                    border-left: 3px solid orange;
+                }
+
+                .active > #nav_link_4
+                {
+                    border-left: 3px solid lightblue;
+                }
+
+                .active > #nav_link_5
+                {
+                    border-left: 3px solid lightgreen;
+                }
+
+                /*FIN */
+
+/*Fin barra de navegacion*/
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+
+
+.intro-text {
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: lightyellow;
+   /* background: rgba(255,255,255,0.9);*/
+}
+
+footer .copyright {
+    margin: 0;
+    padding: 20px 0;
+}
+
+ul.icons {
+    padding: 20px 0;
+    list-style: none;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1.25em 0 0;
+    font-size: 1.75em;
+}
+
+ul.icons li a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+   /* .navbar-header {
+        display: none;
+    }*/
+
+
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a, .navbar-header> a
+    {
+        /*padding-bottom: 15px;*/
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-nav>li>a, .navbar-header> a{
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+/* Propios */
+
+
+
+body
+{
+	   background-color: #2b3e50; /*#00d4ff*/;
+       overflow-x: hidden;
+}
+
+
+.perfil
+{
+    background: blue;
+}
+
+
+/* Scroll */
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* FIN */
+
+
+
+
+/*Header top  */
+
+   .top-header
+   {
+    background-color: rgb(60, 69, 68);
+    color: white;
+    padding: 2.5px;
+   }
+
+   .cont_info, .social_
+   {
+      margin-top: 15px;
+      margin-bottom: 15px;
+   }
+
+
+        /* Iconos redes sociales */
+
+          .social_icons
+        {
+           position: relative;
+        }
+
+
+          .social_ div
+        {
+            font-size: 1.6em;
+            width: 50px;
+            min-height: 1px;
+            background: white;
+            text-align: center;    
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            border: solid black;
+            /*top: 0%;*/
+            /*right: 50%;*/
+            
+            }
+
+          .social_ a
+          {
+            padding-right: 12px;
+            padding-left: 12px;
+            color: black;
+          }
+
+
+
+        .facebook a:hover, .twitter a:hover, 
+        .instagram a:hover, .linkedin a:hover
+        {
+            color: white;
+        }
+
+        .facebook:hover
+        {
+            background-color: #4267b2;
+        }
+
+        .twitter:hover
+        {
+            background: #4dd2ff;
+        }
+
+        .instagram:hover
+        {
+            background-color: rgb(203, 64, 129);
+            background-color: rgb(248, 184, 92);
+
+        }
+
+        .linkedin:hover
+        {
+            background-color: rgb(4, 124, 180);
+        }
+
+        /* Fin */
+
+/*Fin Header top*/
+
+
+
+
+
+
+
+
+/* Nav - fixed */
+
+.logo_nav
+{
+  vertical-align: middle;
+    display: table;
+    table-layout: fixed;
+   /* top: 45%;*/
+    position: relative;
+    height: 100%;
+   /* background: url('../img y videos/Fondo_logo.png');*/
+}
+
+.logo_nav a
+{
+  font-family: "allura";
+  font-size: 2.75em;
+  letter-spacing: 5px;
+  /*background: lightblue;*/
+  color: white;
+  vertical-align: middle;
+  
+}
+
+.logo_nav a:hover
+{
+  color: black;
+  text-decoration: none;
+}
+
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+
+  .affix + .container-fluid 
+  {
+      padding-top: 250px;
+      z-index: 1500;
+  }
+
+  .bs-docs-nav {
+    margin-bottom: 0;
+    /* background-color: #fff; */
+    border-bottom: 0;
+}
+
+
+  /* Fin */
+
+
+
+
+
+
+
+
+  /* IMG central */
+
+    .img_central 
+    {
+        position: relative;
+        height: 700px;
+        background-image: url("../../img y videos/img_diseño/web-design.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        background-origin: border-box;
+        background-size: 100% 100%;
+    }
+
+
+    .img-caption 
+  {
+     position: absolute;
+     right: 70%;
+     bottom: 100px;
+     left: 0%;
+     z-index: 10;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     color: #fff;
+     text-align: center;
+     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  }
+
+    .img-caption span
+    {
+      font-size: 3em;
+    }
+
+
+    /* Fin */
+
+
+#header 
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+
+    /* IMG 2 */
+
+    .img_2
+    {
+      position: relative;
+      height: auto;
+      background: url('../../img y videos/img_diseño/computadoras_conexion.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-origin: border-box;
+      background-size: 100% 100%;
+    }
+
+  /*  Intro */
+
+    .box_bn 
+    {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    }
+
+
+
+    .jumbotron
+    {
+     /* background: lightblue;*/
+    }
+
+    .intro
+    {
+      color: white;
+      background: #6f5499;
+    }
+
+
+
+  /* Fin */
+
+ 
+
+
+
+
+
+/* Quien soy */
+
+
+#quien_soy
+{
+  background-color: #222222;
+}
+
+#quien_soy .row p, #quien_soy .row ul
+{
+  color: white!important;
+}
+
+#quien_soy .row .col-md-8
+{ 
+   margin-bottom: 100px;
+}
+
+/*Fin*/
+
+
+
+   .serv_
+   {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: rgba(8, 14, 17, 1);
+    border: 1px solid rgba(0, 174, 255, 0.5);
+   }
+
+   .serv_ h2
+   {
+    color: white;
+   }
+
+   .serv_ p
+   {
+      margin-bottom: 15px;
+      font-weight: 200;
+      color: #d9d9d9;
+   }
+
+   .icono-servicio 
+   {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    border-radius: 10rem;
+    background: #f6f6f8;
+    border: solid .0625rem #d9d9e2;
+    text-align: center;
+}
+
+/* FIN */
+
+
+/*Portafolio */
+
+.image-wrapper{
+    height: 200px;
+}
+
+.image-wrapper img{
+    height: 100%;
+    width: 100%;
+}
+
+.text_port
+{
+      color: white;
+}
+
+/* Fin Portafolio */
+
+
+/*Clases Genericas */
+
+.margin-5{
+    margin-bottom: 5%;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 500px)
+{
+
+    .resp_ .col-md-6 .col-sm-12 span
+    {
+       padding-bottom: 15px;
+       padding-top: 15px;
+    }
+
+    .logo_nav a
+    {
+      padding-bottom: 10px;
+      font-size: 2.35em;
+    }
+
+    .img_central 
+    {
+      background-size: 100% 100%;
+      height: 400px;
+    }
+
+
+    /*.img_central 
+    {
+        position: relative;
+        height: 700px;
+        background-image: url("../img y videos/img_diseño/web-design.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        background-origin: border-box;
+        background-size: 100% 100%;
+    }*/
+
+
+   
+}
+
+@media screen and (max-width:768px) and (min-width: 768px)
+{
+    .navbar-header{
+        margin-right: 35% !important;
+    }
+}
+
+
+@media screen and (max-width:768px) 
+{
+     .resp_
+    {
+     padding-top: 15px;
+     padding-bottom: 15px;
+     
+    } 
+
+     .correo
+     {
+        text-align: center;
+     }
+    
+              
+     .social_icons
+    {
+        text-align: center;
+        margin-right:auto;
+        margin-left:auto;
+        right: 0;
+        float: none;
+    }
+
+    .navbar-header
+    {
+      padding-bottom: 10px;
+    }
+
+
+
+    .logo_nav
+    {
+      position: absolute;
+    }
+
+        #quien_soy img
+      { 
+         margin-bottom: 75px;
+      }
+
+
+  
+}
+  
+

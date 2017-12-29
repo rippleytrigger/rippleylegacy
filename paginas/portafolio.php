@@ -3,23 +3,12 @@
 		<div class="box">
 			<header class="jumbotron" style="background: lightblue;">
 					
-			  <div class="container-fluid text-center">
-			    <h1>¿Deseas ver algunas muestras de mi trabajo?</h1>     
-
-			    <p>Dale click a las imágenes para ver mis proyectos de forma on-line</p>
-			  </div>
+			  	<div class="container-fluid text-center">
+			    	<h1>¿Deseas ver algunas muestras de mi trabajo?</h1>     
+			    	<p>Dale click a las imágenes para ver mis proyectos de forma on-line</p>
+			  	</div>
 			
 				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 margin-5">
-						<div class="image-wrapper">
-								<img src="img y videos/logo federales.jpg" 
-								class="img-responsive" alt="Image" />
-						</div>
-						<a href="http://www.rippleys.260mb.net/proyecto_uneweb/" 
-						class="btn btn-warning btn-block">
-								Los Federales
-						</a>
-					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 margin-5">
 						<div class="image-wrapper">
 								<img src="img y videos/universitas.jpg" 
@@ -63,6 +52,5 @@
 					</div>
 				</div>
 			</header>
-
 		</div>
 	</div>
