@@ -285,65 +285,12 @@
 
 		$(window).on("load",function()
 		{
-			//window - modal
-
-			//$(".cerrar_m").on("click", modal_close)
-
-
-
-
-
-			$(".box-hab").click( function(event)
-			{
-
-				/*barra_p.animate({ width: 0}, 0)*/
-
-			console.log($(".box-hab"))
-			
-
-			var obj = event.target.id
-
-			console.log(obj)
-
-			//console.log(obj,  event.target.lastElementChild.firstChild.data)
-
-			
-
-				switch(obj)
-				{
-					case "html":
-
-					hab_ = 50;
-					hab_t = "HTML 5";
-					break;
-
-					case "css":
-
-					hab_ = 50;
-					hab_t = "CSS 3";
-					break;
-
-					case "javascript":
-
-					hab_ = 70;
-					hab_t = "Java Script";
-					break;
-
-					default:
-					event.preventDefault();
-
-				}		
-
-			 modal_progress()
-		
-			});
-
-		//Validación de Formularios
-
+			/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+			particlesJS.load('intro', 'js/particles.json', function() {
+			console.log('callback - particles.js config loaded');
+  			});
+			//Validación de Formularios
 			validacion_suma ()
-
-
-
 		})
 
 

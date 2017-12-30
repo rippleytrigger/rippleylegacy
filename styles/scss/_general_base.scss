@@ -20,6 +20,14 @@ p, ol, ul {
     color: $rippley-color-1;
 }
 
+section{
+    position: relative;
+}
+
+.container .jumbotron, .container-fluid .jumbotron{
+    border-radius: 0;
+}
+
 hr {
     max-width: 400px;
     border-color: #999999;
@@ -52,10 +60,6 @@ a{
     color: white;
 }
     
-.navbar-alternative .navbar-toggle {
-    background: $rippley-color-1;
-}
-
 .navbar-toggle .icon-bar{
     color: white;
     background: white;
@@ -179,6 +183,9 @@ a{
 footer {
     background: $rippley-color-4;
     color: $rippley-color-2;
+    .container{
+        padding: 2.5%;
+    }
     .copyright {
         margin: 0;
         padding: 20px 0;
@@ -399,18 +406,20 @@ body::-webkit-scrollbar-thumb {
 
   /*  Intro */
 
-    .box_bn {
-    margin-bottom: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    #intro{
+        .col-md-12{
+            z-index: 55;
+        }
+    }
+
+    .box_background{
+    margin: 30px 0;
+    padding: 30px 15px; 
     background: #fff;
     background: rgba(255,255,255,0.9);
     }
 
-    .intro
-    {
+    .intro{
       color: white;
       background: #6f5499;
     }
@@ -483,10 +492,52 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.text_port
-{
-    color: white;
+.background-black{
+    background: #222222;
 }
+
+.portafolio-frontground-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(.8);
+    transition: all .3s ease;
+    background: rgba(0, 0, 0, 0.7);
+
+    .margin-5:hover &{
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+.margin-5{
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio-img-background{
+    width: 102%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    transition: all .3s ease;
+    backface-visibility: hidden;
+    display: block;
+
+    .margin-5:hover &{
+        transform: scale(1.2);
+    }
+}
+
+
 
 /* Fin Portafolio */
 
@@ -501,6 +552,11 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 5%;
 }
 
+.particles-js-canvas-el{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 /*Media Queries*/
 
@@ -537,12 +593,4 @@ body::-webkit-scrollbar-thumb {
         background-size: 100% 100%;
     }*/
 }
-
-@media screen and (max-width:768px) and (min-width: 768px)
-{
-    .navbar-header{
-        margin-right: 35% !important;
-    }
-}
-
 

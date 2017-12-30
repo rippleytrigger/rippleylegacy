@@ -10,8 +10,8 @@
     </div>
   
  	<!-- FIN  -->
-     <section class="container">
-     	<div class="row">
+     <section class="container-fluid" id="intro">
+     	<div class="container">
 	     	<article class="col-md-12">
 	     		<?php require_once 'paginas/intro.php'; ?>
 	     	</article>

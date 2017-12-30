@@ -1,7 +1,7 @@
   
 
 <!-- Primera Sección -->
-    <div class="box_bn">
+    <div class="box_background">
         <header class="jumbotron intro">
             <div class="container-fluid">
                 <h1 class="text-center">¿Por qué es importante poseer un Sitio Web?</h1> 

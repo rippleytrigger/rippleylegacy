@@ -9,6 +9,7 @@
       	<i class="fa fa-thumbs-up fa-1x " aria-hidden="true"></i>.
       </p>
 
+      <!--
       <div class="col-md-6 col-xs-12">
 				<p id=" header" class="text-center align-middle">
         <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
@@ -18,7 +19,7 @@
       <div class="col-md-6 col-xs-12">
 				<p class="text-center"><i class="fa fa-mobile fa-3x " aria-hidden="true">
         </i>&nbsp; &nbsp; +58 424 - 2482023</p>
-      </div>
+      </div>-->
 
       <!--<div class="row">
 		    <div class="text-center social_">

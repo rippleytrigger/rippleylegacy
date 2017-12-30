@@ -14,7 +14,6 @@
 			estos ultimos años?</p>
 
 			<p class="lead"> <b>Entonces este portal es para ti </b></p>
-
 		</div>
 	</header>
 
