@@ -4,8 +4,8 @@
     <h1 class="text-center">Contáctame</h1>
 
       <p class="text-center">
-      	Si estás interesado, no dudes en mandarme un correo 
-        y empecemos a hacer negocios 
+      	Si estás interesado, no dudes en escribirme o llamarme  
+        y empecemos a hacer negocios. 
       	<i class="fa fa-thumbs-up fa-1x " aria-hidden="true"></i>.
       </p>
 
@@ -33,7 +33,7 @@
 				<div class="col-md-4">
 					<button class="btn btn-info btn-lg btn-block" 
           data-toggle="collapse" data-target="#formulario_cont">
-						Formulario de contacto
+						Contáctame
 					</button>
 				</div>
 				<div class="col-md-4">

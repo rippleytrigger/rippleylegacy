@@ -3,15 +3,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <h2> Enlaces </h2>
                     <hr/>
                     
                     <ul>
                         <li><a href="">Términos y Servicios </a></li>
                         <li><a href="">Blog </a> </li>
+                        <li><a href="">Soporte </a> </li>
                     </ul>
-                    
-
+                
                 </div>
                 <div class="col-md-4">
                     <h2> Contacto </h2>
@@ -19,18 +21,20 @@
                     <div class="row text-center">
                         <div class="col-md-12 margin-5"> 
                             <span>
-                                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                            &nbsp; &nbsp; 
+                                
                                 <a href="mailto:rippleytrigger@gmail.com">
+                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                    &nbsp; &nbsp; 
                                     rippleytrigger@gmail.com
                                 </a>
                             </span>
                         </div>
                         <div class="col-md-12 margin-5"> 
-                            <span><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                            &nbsp; &nbsp; 
+                            <span>
                                 <a href="tel: +584242482023"> 
-                                +58 424 - 2482023
+                                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                    &nbsp; &nbsp; 
+                                    +58 424 - 2482023
                                 </a>
                             </span>
                         </div>

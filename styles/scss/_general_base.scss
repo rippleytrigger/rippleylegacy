@@ -1,7 +1,5 @@
-
- body {
+body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -38,8 +36,12 @@ a{
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    color: white;
+    color: $rippley-color-2;
     &:hover{
+        text-decoration: none;
+        color: $rippley-color-3;
+    }
+    &:focus{
         text-decoration: none;
         color: $rippley-color-3;
     }
@@ -57,12 +59,11 @@ a{
 }
 
 .navbar-alternative .navbar-nav > li > a {
-    color: white;
+    color: $rippley-color-2;
 }
     
 .navbar-toggle .icon-bar{
-    color: white;
-    background: white;
+    background: $rippley-color-2;
 }
 
 
@@ -85,7 +86,7 @@ a{
     & > a{
         transition: .3s;
         background: inherit;
-        color: black;
+        color: $rippley-color-1;
         &:hover{
             background: $rippley-color-3; 
         }
@@ -106,7 +107,7 @@ a{
         font-family: "allura";
         font-size: 2.75em;
         letter-spacing: 5px;
-        color: white;
+        color: $rippley-color-2;
         text-decoration: none;
     }
 
@@ -128,7 +129,6 @@ a{
 
     .bs-docs-nav {
         margin-bottom: 0;
-        /* background-color: #fff; */
         border-bottom: 0;
     }
   /* Fin */
@@ -157,7 +157,6 @@ a{
 .box {
     margin-bottom: 20px;
     padding: 30px 15px;
-    background: #fff;
     background: rgba($rippley-color-2,0.9);
 }
 
@@ -276,13 +275,6 @@ ul.icons li a {
     }
 }
 
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
 
 /* Propios */
 
@@ -320,7 +312,7 @@ body::-webkit-scrollbar-thumb {
    {
       margin-top: 15px;
       margin-bottom: 15px;
-      span{
+      a{
         justify-content: center;
         align-items: center;
         display: flex;
@@ -382,52 +374,52 @@ body::-webkit-scrollbar-thumb {
 
     /* Fin */
 
-#header 
-{
+#header {
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100vh;
 }
 
-
-    /* IMG 2 */
-
-    .img_2{
-      position: relative;
-      height: auto;
-      background: url('../../img y videos/img_diseño/computadoras_conexion.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-origin: border-box;
-      background-size: 100% 100%;
-    }
+.img_2{
+    position: relative;
+    height: auto;
+    background: url("../../img y videos/img_diseño/computadoras_conexion.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-origin: border-box;
+    background-size: 100% 100%;
+}
+    
 
   /*  Intro */
 
-    #intro{
-        .col-md-12{
+    .seccion-intro{
+        article{
             z-index: 55;
+            position: relative;
+        }
+
+        .box_background{
+            margin: 30px 0;
+            padding: 30px 15px; 
+            background: #fff;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .intro{
+            color: white;
+            background: #6f5499;
         }
     }
 
-    .box_background{
-    margin: 30px 0;
-    padding: 30px 15px; 
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-    }
-
-    .intro{
-      color: white;
-      background: #6f5499;
-    }
+   
   /* Fin */
 
 
 /* Quien soy */
-#quien_soy{
+.seccion-quien-soy{
   background-color: #222222;
 
   .row p, .row ul{
@@ -441,42 +433,9 @@ body::-webkit-scrollbar-thumb {
 
 
 /*Fin*/
+   
 
-
-
-   .serv_
-   {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin-bottom: 30px;
-        color: inherit;
-        background-color: rgba(8, 14, 17, 1);
-        border: 1px solid rgba(0, 174, 255, 0.5);
-
-        h2{
-        color: white;
-        }
-
-        p{
-        margin-bottom: 15px;
-        font-weight: 200;
-        color: #d9d9d9;
-        }
-   }
-
-   .icono-servicio {
-        width: 10rem;
-        height: 10rem;
-        line-height: 10rem;
-        -webkit-border-radius: 10rem;
-        -moz-border-radius: 10rem;
-        -ms-border-radius: 10rem;
-        -o-border-radius: 10rem;
-        border-radius: 10rem;
-        background: #f6f6f8;
-        border: solid .0625rem #d9d9e2;
-        text-align: center;
-    }
+   
 
 /* FIN */
 
@@ -496,7 +455,7 @@ body::-webkit-scrollbar-thumb {
     background: #222222;
 }
 
-.portafolio-frontground-img{
+.portfolio-frontground-img{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -511,14 +470,16 @@ body::-webkit-scrollbar-thumb {
     transition: all .3s ease;
     background: rgba(0, 0, 0, 0.7);
 
-    .margin-5:hover &{
+    .portafolio-item:hover &{
         transform: scale(1.0);
         opacity: 1;
     }
 }
-.margin-5{
+
+.portafolio-item{
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 7px 20px black;
 }
 
 .portafolio-img-background{
@@ -532,14 +493,14 @@ body::-webkit-scrollbar-thumb {
     backface-visibility: hidden;
     display: block;
 
-    .margin-5:hover &{
+    .portafolio-item:hover &{
         transform: scale(1.2);
     }
 }
 
-
-
 /* Fin Portafolio */
+
+
 
 
 /*Clases Genericas */
@@ -558,39 +519,11 @@ body::-webkit-scrollbar-thumb {
     top: 0;
 }
 
-/*Media Queries*/
 
-@media screen and (max-width: 500px)
-{
-
-    .resp_ .col-md-6 .col-sm-12 span
-    {
-       padding-bottom: 15px;
-       padding-top: 15px;
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
     }
-
-    .logo_nav a
-    {
-      padding-bottom: 10px;
-      font-size: 2.35em;
-    }
-
-    .img_central 
-    {
-      background-size: 100% 100%;
-      height: 400px;
-    }
-
-    /*.img_central 
-    {
-        position: relative;
-        height: 700px;
-        background-image: url("../img y videos/img_diseño/web-design.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center; 
-        background-origin: border-box;
-        background-size: 100% 100%;
-    }*/
 }
-

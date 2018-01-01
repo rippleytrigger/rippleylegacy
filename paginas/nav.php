@@ -6,9 +6,9 @@
             <div class="col-md-4 cont_info">
 
                 <span>
+                    <a href="mailto:rippleytrigger@gmail.com">
                     <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                 &nbsp; &nbsp; 
-                    <a href="mailto:rippleytrigger@gmail.com">
                         rippleytrigger@gmail.com
                     </a>
                 </span>
@@ -16,9 +16,10 @@
             </div>
             <div class="col-md-4 cont_info">
 
-                <span><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                &nbsp; &nbsp; 
+                <span>
                     <a href="tel: +584242482023"> 
+                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                &nbsp; &nbsp; 
                         +58 424 - 2482023
                     </a>
                 </span>

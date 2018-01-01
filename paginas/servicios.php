@@ -1,16 +1,15 @@
-<article class="single-page box">
+<article class="box">
 			
-		<header class="page-header">
-			<div class="jumbotron" style="background: orange;">
-					
-				<h1>Conoce mis servicios</h1>
-	
+		<header>
+			<div class="jumbotron">
+				<h1 class="text-center">Conoce mis servicios</h1>
+				<hr />
 			</div>
 		</header>
 			
 	<div class="container">	
 		<div class="row">
-			<section class="detalle-servicio col-md-5 serv_" >
+			<section class="detalle-servicio col-md-4">
 				<div class="text-center">
 					<figure class="icono-servicio">
 						<img src="img y videos/icono-consultoria.svg" alt="Consultoría" />
@@ -26,7 +25,7 @@
 				</div>
 			</section>
 
-			<section class="detalle-servicio col-md-5 col-md-offset-1 serv_">
+			<section class="detalle-servicio col-md-4">
 				<div class="text-center">
 					<figure class="icono-servicio text-center">
 						<img src="img y videos/icono-diseno.svg" alt="Diseño" />
@@ -41,9 +40,7 @@
 					O sea, son adaptables a dispositivos móviles. </p>
 				</div>
 			</section>
-		</div>
-		<div class="row">
-			<section class="detalle-servicio col-md-5 serv_">
+			<section class="detalle-servicio col-md-4">
 				<div class="text-center">
 					<figure class="icono-servicio ">
 						<img src="img y videos/icono-desarrollo.svg" alt="Desarrollo" />
@@ -57,8 +54,10 @@
 					 del proyecto.  </p>
 				</div>
 			</section>
-
-			<section class="detalle-servicio col-md-5 col-md-offset-1 serv_">
+		</div>
+		<div class="row">
+			
+			<!--<section class="detalle-servicio col-md-5 col-md-offset-1 serv_">
 				<div class="text-center">
 					<figure class="icono-servicio ">
 						<i class="fa fa-globe fa-5x"></i>
@@ -69,7 +68,7 @@
 					<h2>Dominios y Hostings web</h2>
 					<p> Realizo trámites de dominios y hostings webs </p>
 				</div>
-			</section>
+			</section>-->
 		</div>
 	</div>
 </article>
