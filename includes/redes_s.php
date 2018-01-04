@@ -1,5 +1,5 @@
           
-    <a href="https://www.facebook.com/pg/rippleylegacy/">
+    <a href="https://www.facebook.com/profile.php?id=100011010648349">
         <i class="fa fa-facebook" aria-hidden="true"></i>
     </a>
 
@@ -7,11 +7,11 @@
         <i class="fa fa-twitter" aria-hidden="true"></i>
     </a>        
 
-    <a href="https://www.instagram.com/rippleylegacy_2017/">
+    <a href="https://www.instagram.com/rippleylegacy/">
         <i class="fa fa-instagram" aria-hidden="true"></i>
     </a>
     
-    <a href="https://www.linkedin.com/in/marcos-lopez-3ba024121/">    
+    <a href="https://www.linkedin.com/in/rippleytrigger/">    
         <i class="fa fa-linkedin" aria-hidden="true"></i>
     </a>
  

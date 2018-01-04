@@ -1,11 +1,21 @@
 @charset "UTF-8";
 body {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
+  background-color: #2b3e50;
+  overflow-x: hidden; }
 
+/* Scroll */
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey; }
+
+/* FIN */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -14,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 p, ol, ul {
   font-size: 1.25em;
   line-height: 1.6;
-  color: #000; }
+  color: #222; }
 
 section {
   position: relative; }
@@ -40,12 +50,22 @@ a {
     color: #2fa4e7; }
 
 /* Barra de Navegacion */
+#header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh; }
+
+.top-header {
+  background: #3c4544;
+  color: #fff;
+  padding: 2.5px; }
+
 .navbar.affix > .container-fluid {
-  box-shadow: 0px 2px 30px 0px #000; }
+  box-shadow: 0px 2px 30px 0px #222; }
 
 .navbar-alternative {
-  background-color: #2fa4e7;
-  border-color: #1995dc; }
+  background-color: #2fa4e7; }
 
 .navbar-alternative .navbar-nav > li > a {
   color: #fff; }
@@ -63,12 +83,12 @@ a {
 
 .navbar-alternative li:not(.active) a:hover {
   background: inherit;
-  color: #000; }
+  color: #222; }
 
 .navbar-alternative li.active > a {
   transition: .3s;
   background: inherit;
-  color: #000; }
+  color: #222; }
   .navbar-alternative li.active > a:hover {
     background: #2fa4e7; }
   .navbar-alternative li.active > a:before {
@@ -86,7 +106,7 @@ a {
   text-decoration: none; }
 
 .logo_nav a:hover {
-  color: #000;
+  color: #222;
   text-decoration: none; }
 
 .affix {
@@ -147,18 +167,6 @@ footer {
     margin: 0;
     padding: 20px 0; }
 
-ul.icons {
-  padding: 20px 0;
-  list-style: none; }
-
-ul.icons li {
-  display: inline-block;
-  padding: 0 1.25em 0 0;
-  font-size: 1.75em; }
-
-ul.icons li a {
-  text-decoration: none; }
-
 @media screen and (min-width: 768px) {
   .brand {
     display: inherit;
@@ -191,10 +199,8 @@ ul.icons li a {
     color: #fff; }
 
   .navbar {
+    min-height: 0;
     border-radius: 0; }
-
-  .navbar {
-    min-height: 0; }
 
   .navbar-default {
     border: none;
@@ -216,51 +222,25 @@ ul.icons li a {
     table-layout: fixed;
     font-size: 1.25em; } }
 /* Propios */
-body {
-  background-color: #2b3e50;
-  overflow-x: hidden; }
-
-/* Scroll */
-body::-webkit-scrollbar {
-  width: 1em; }
-
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
-
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey; }
-
-/* FIN */
 /*Header top  */
-.top-header {
-  background: #3c4544;
-  color: #fff;
-  padding: 2.5px; }
-
-.cont_info, .social_ {
+.contact_info, .social_rrss {
   margin-top: 15px;
   margin-bottom: 15px; }
-  .cont_info a, .social_ a {
+  .contact_info a, .social_rrss a {
     justify-content: center;
     align-items: center;
     display: flex; }
 
-/* Iconos redes sociales */
-.social_icons {
-  position: relative; }
-
-.social_ a {
+.social_rrss a {
   font-size: 1.6em;
   text-decoration: none;
   display: inline-block;
   padding: 0 12px;
   color: #fff; }
-  .social_ a:hover {
+  .social_rrss a:hover {
     color: #2fa4e7; }
 
 /* Fin */
-/*Fin Header top*/
 /* IMG central */
 .img_central {
   position: relative;
@@ -272,28 +252,6 @@ body::-webkit-scrollbar-thumb {
   background-origin: border-box;
   background-size: 100% 100%; }
 
-.img-caption {
-  position: absolute;
-  right: 70%;
-  bottom: 100px;
-  left: 0%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-
-.img-caption span {
-  font-size: 3em; }
-
-/* Fin */
-#header {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 100vh; }
-
 .img_2 {
   position: relative;
   height: auto;
@@ -304,7 +262,6 @@ body::-webkit-scrollbar-thumb {
   background-origin: border-box;
   background-size: 100% 100%; }
 
-/*  Intro */
 .seccion-intro article {
   z-index: 55;
   position: relative; }
@@ -314,69 +271,20 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
   background: rgba(255, 255, 255, 0.9); }
 .seccion-intro .intro {
-  color: white;
+  color: #fff;
   background: #6f5499; }
 
-/* Fin */
-/* Quien soy */
 .seccion-quien-soy {
-  background-color: #222222; }
+  background-color: #222; }
   .seccion-quien-soy .row p, .seccion-quien-soy .row ul {
-    color: white; }
+    color: #fff; }
   .seccion-quien-soy .row .col-md-8 {
     margin-bottom: 100px; }
 
-/*Fin*/
-/* FIN */
-/*Portafolio */
-.image-wrapper {
-  height: 200px; }
-
-.image-wrapper img {
-  height: 100%;
-  width: 100%; }
-
-.background-black {
-  background: #222222; }
-
-.portfolio-frontground-img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all .3s ease;
-  background: rgba(0, 0, 0, 0.7); }
-  .portafolio-item:hover .portfolio-frontground-img {
-    transform: scale(1);
-    opacity: 1; }
-
-.portafolio-item {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 7px 20px black; }
-
-.portafolio-img-background {
-  width: 102%;
-  height: auto;
-  position: absolute;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  transition: all .3s ease;
-  backface-visibility: hidden;
-  display: block; }
-  .portafolio-item:hover .portafolio-img-background {
-    transform: scale(1.2); }
-
-/* Fin Portafolio */
 /*Clases Genericas */
+.background-black {
+  background: #222; }
+
 .color-white {
   color: #fff; }
 
@@ -404,13 +312,13 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;
     background: rgba(152, 167, 179, 0.75); }
   .seccion-mis-servicios h1 {
-    text-shadow: 1px 2px 2px #000; }
+    text-shadow: 1px 2px 2px #222; }
   .seccion-mis-servicios h2 {
-    color: #000; }
+    color: #222; }
   .seccion-mis-servicios p {
     margin-bottom: 15px;
     font-weight: 200;
-    color: #000; }
+    color: #222; }
   .seccion-mis-servicios .icono-servicio {
     width: 10rem;
     height: 10rem;
@@ -425,6 +333,45 @@ body::-webkit-scrollbar-thumb {
     text-align: center; }
   .seccion-mis-servicios .jumbotron {
     padding: 0; }
+
+.seccion-portafolio .image-wrapper {
+  height: 200px; }
+.seccion-portafolio .image-wrapper img {
+  height: 100%;
+  width: 100%; }
+.seccion-portafolio .portfolio-frontground-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all .3s ease;
+  background: rgba(0, 0, 0, 0.7); }
+  .portafolio-item:hover .seccion-portafolio .portfolio-frontground-img {
+    transform: scale(1);
+    opacity: 1; }
+.seccion-portafolio .portafolio-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 7px 20px #222; }
+.seccion-portafolio .portafolio-img-background {
+  width: 102%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  transition: all .3s ease;
+  backface-visibility: hidden;
+  display: block; }
+  .portafolio-item:hover .seccion-portafolio .portafolio-img-background {
+    transform: scale(1.2); }
 
 /* -----------------------------------------    Desktops    ------------------------------------- */
 /* Large Desktop */
@@ -472,7 +419,12 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10px; }
 
   .collapse.in {
-    display: block !important; } }
+    display: block !important; }
+
+  .seccion-mis-servicios .col-md-4 {
+    text-align: center; }
+    .seccion-mis-servicios .col-md-4 figure {
+      margin: auto; } }
 /* Galaxy Tab Portrait */
 /* iPad I/II Portrait */
 @media only screen and (max-width: 768px) {
@@ -482,13 +434,6 @@ body::-webkit-scrollbar-thumb {
 
   .correo {
     text-align: center; }
-
-  .social_icons {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    right: 0;
-    float: none; }
 
   #quien_soy img {
     margin-bottom: 75px; } }

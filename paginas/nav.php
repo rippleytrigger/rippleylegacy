@@ -3,7 +3,7 @@
     <!-- Info de contacto -->
     <div class="container-fluid" id="top-header"> 
         <div class="row top-header text-center">
-            <div class="col-md-4 cont_info">
+            <div class="col-md-4 contact_info">
 
                 <span>
                     <a href="mailto:rippleytrigger@gmail.com">
@@ -14,7 +14,7 @@
                 </span>
   
             </div>
-            <div class="col-md-4 cont_info">
+            <div class="col-md-4 contact_info">
 
                 <span>
                     <a href="tel: +584242482023"> 
@@ -24,7 +24,7 @@
                     </a>
                 </span>
             </div>
-            <div class="col-md-4 social_">
+            <div class="col-md-4 social_rrss">
 
                 <?php require_once 'includes/redes_s.php'; ?>
 

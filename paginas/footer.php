@@ -47,7 +47,7 @@
         </div>
         <div class="container-fluid background-black">
             <div class="row text-center">
-                    <div class="social_ col-md-4">
+                    <div class="social_rrss col-md-4">
                          <?php require 'includes/redes_s.php'; ?>
                     </div>
                      <div class="copyright col-md-6">

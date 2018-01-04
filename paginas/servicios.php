@@ -9,7 +9,7 @@
 			
 	<div class="container">	
 		<div class="row">
-			<section class="detalle-servicio col-md-4">
+			<section class="detalle-servicio col-md-4 text-center-portrait">
 				<div class="text-center">
 					<figure class="icono-servicio">
 						<img src="img y videos/icono-consultoria.svg" alt="Consultoría" />
