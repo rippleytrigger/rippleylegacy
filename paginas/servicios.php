@@ -9,9 +9,9 @@
 			
 	<div class="container">	
 		<div class="row">
-			<section class="detalle-servicio col-md-4 text-center-portrait">
+			<section class="detalle-servicio col-md-4 text-center-portrait margin-40px-portrait">
 				<div class="text-center">
-					<figure class="icono-servicio">
+					<figure class="icono-servicio margin-auto-portrait">
 						<img src="img y videos/icono-consultoria.svg" alt="Consultoría" />
 					</figure>
 				</div>
@@ -25,9 +25,9 @@
 				</div>
 			</section>
 
-			<section class="detalle-servicio col-md-4">
+			<section class="detalle-servicio col-md-4 text-center-portrait margin-40px-portrait">
 				<div class="text-center">
-					<figure class="icono-servicio text-center">
+					<figure class="icono-servicio margin-auto-portrait">
 						<img src="img y videos/icono-diseno.svg" alt="Diseño" />
 					</figure>
 				</div>
@@ -35,21 +35,23 @@
 						
 					<h2>Diseño</h2>
 					<p>Realizo todos mis diseños web usando plataformas CMS como Wordpress. </p>
-					<p>Diseño paginas web autoadministrables.</p>
+					<p>Dependiendo de la circunstancias diseño mis propios temas, o extiendo uno ya prehecho.
+					</p>
 					<p>Mis proyectos siempre tienen propiedades responsive. 
 					O sea, son adaptables a dispositivos móviles. </p>
 				</div>
 			</section>
-			<section class="detalle-servicio col-md-4">
+			<section class="detalle-servicio col-md-4 text-center-portrait margin-40px-portrait">
 				<div class="text-center">
-					<figure class="icono-servicio ">
+					<figure class="icono-servicio margin-auto-portrait">
 						<img src="img y videos/icono-desarrollo.svg" alt="Desarrollo" />
 					</figure>
 				</div>
 				<div class="text">
 						
 					<h2>Desarrollo</h2>
-					<p> Empleo programación web tanto del lado del servidor como de la misma página web.  </p>
+					<p> Empleo programación web tanto del lado del servidor como del lado del cliente.</p>
+					<p> Mis herramientas de trabajo son HTML5, CSS3, JavaScript y PHP.
 					<p> Dependiendo de la complejidad de la página, esta puede ser la fase más dificil
 					 del proyecto.  </p>
 				</div>

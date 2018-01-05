@@ -1,3 +1,38 @@
+.seccion-intro{
+    .jumbotron.intro{
+        color: $rippley-color-2;
+        background: $rippley-color-5;
+    }
+    
+    article{
+        z-index: 55;
+        position: relative;
+    }
+
+    .box_background{
+        margin: 30px 0;
+        padding: 30px 15px; 
+        background: $rippley-color-2;
+        background: rgba($rippley-color-2,0.9);
+    }
+}
+
+
+.seccion-quien-soy{
+    background-color: $rippley-color-1;
+    .jumbotron{
+        background: $rippley-color-6;
+    }
+
+    .row p, .row ul{
+        color: $rippley-color-2;
+    }
+    .row .col-md-8{ 
+        margin-bottom: 100px;
+    }
+}
+
+
 .seccion-mis-servicios{
     padding: 60px;
     margin-bottom: 30px;
@@ -96,6 +131,31 @@
     
         .portafolio-item:hover &{
             transform: scale(1.2);
+        }
+    }
+}
+
+.seccion-contacto{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    h1, p{
+        color: white;
+    }
+    .jumbotron{
+        transition: .5s background ease-out, .1s border-left, .2s border-top, .3s border-right ,
+        .4s border-bottom, 1s color; 
+    }
+
+    &:hover{
+        h1, p{
+            color: black;
+        }
+        .jumbotron{
+            background: lightgreen;
+        }
+        hr{
+           opacity: .1;
         }
     }
 }

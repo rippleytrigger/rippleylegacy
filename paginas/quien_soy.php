@@ -1,9 +1,9 @@
  <div class="container">
 
 	<header class="page-header">
-		 <div class="jumbotron" style="background: #00d4ff;">
+		 <div class="jumbotron">
 
-		 <h1 class="text-center">¿Necesitas un portal web?</h1>
+		 	<h1 class="text-center">¿Necesitas un portal web?</h1>
 
 			<p class="lead">¿Eres de esos que esta comenzando a emprender en su negocio
 			 y quieres tener tu propia pagina web, pero tienes problemas al no tener
@@ -18,11 +18,11 @@
 	</header>
 
 	<div class="row">
-		<div class="col-md-4 col-sm-6 col-xs-6">
+		<div class="col-md-4 col-sm-6 col-xs-6 margin-40px-portrait">
 		 	<img class="img-responsive img-rounded" src="img y videos/link.jpg">
 		</div>
 
-		<div class="col-md-8 col-sm-12 col-xs-12 text-justify" id="parr_vent">
+		<div class="col-md-8 col-sm-12 col-xs-12 text-justify color-white">
 			
 			<p>Mi nombre es Marcos López, y soy desarrollador web 
 			<span lang="en"> Front-End </span> con dos años de experiencia en el área.</p>

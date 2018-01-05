@@ -1,6 +1,6 @@
 	
 <!-- Contacto -->
-	<header class="jumbotron" style="background: lightgreen;">
+	<header class="jumbotron">
     <h1 class="text-center">Contáctame</h1>
 
       <p class="text-center">
@@ -9,6 +9,7 @@
       	<i class="fa fa-thumbs-up fa-1x " aria-hidden="true"></i>.
       </p>
 
+      <hr/>
       <!--
       <div class="col-md-6 col-xs-12">
 				<p id=" header" class="text-center align-middle">

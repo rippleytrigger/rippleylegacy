@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Allura;
+  src: url(../fonts/Allura-Regular.ttf); }
 body {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #2b3e50;
@@ -23,8 +26,13 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ol, ul {
   font-size: 1.25em;
-  line-height: 1.6;
+  line-height: 1.6; }
+
+p {
   color: #222; }
+
+ul {
+  color: #fff; }
 
 section {
   position: relative; }
@@ -99,7 +107,7 @@ a {
   position: relative; }
 
 .logo_nav a {
-  font-family: "allura";
+  font-family: Allura;
   font-size: 2.75em;
   letter-spacing: 5px;
   color: #fff;
@@ -262,25 +270,6 @@ footer {
   background-origin: border-box;
   background-size: 100% 100%; }
 
-.seccion-intro article {
-  z-index: 55;
-  position: relative; }
-.seccion-intro .box_background {
-  margin: 30px 0;
-  padding: 30px 15px;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.9); }
-.seccion-intro .intro {
-  color: #fff;
-  background: #6f5499; }
-
-.seccion-quien-soy {
-  background-color: #222; }
-  .seccion-quien-soy .row p, .seccion-quien-soy .row ul {
-    color: #fff; }
-  .seccion-quien-soy .row .col-md-8 {
-    margin-bottom: 100px; }
-
 /*Clases Genericas */
 .background-black {
   background: #222; }
@@ -301,6 +290,27 @@ footer {
     content: '';
     display: table;
     clear: both; } }
+.seccion-intro .jumbotron.intro {
+  color: #fff;
+  background: #6f5499; }
+.seccion-intro article {
+  z-index: 55;
+  position: relative; }
+.seccion-intro .box_background {
+  margin: 30px 0;
+  padding: 30px 15px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9); }
+
+.seccion-quien-soy {
+  background-color: #222; }
+  .seccion-quien-soy .jumbotron {
+    background: #00d4ff; }
+  .seccion-quien-soy .row p, .seccion-quien-soy .row ul {
+    color: #fff; }
+  .seccion-quien-soy .row .col-md-8 {
+    margin-bottom: 100px; }
+
 .seccion-mis-servicios {
   padding: 60px;
   margin-bottom: 30px;
@@ -373,6 +383,20 @@ footer {
   .portafolio-item:hover .seccion-portafolio .portafolio-img-background {
     transform: scale(1.2); }
 
+.seccion-contacto {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .seccion-contacto h1, .seccion-contacto p {
+    color: white; }
+  .seccion-contacto .jumbotron {
+    transition: .5s background ease-out, .1s border-left, .2s border-top, .3s border-right , .4s border-bottom, 1s color; }
+  .seccion-contacto:hover h1, .seccion-contacto:hover p {
+    color: black; }
+  .seccion-contacto:hover .jumbotron {
+    background: lightgreen; }
+  .seccion-contacto:hover hr {
+    opacity: .1; }
+
 /* -----------------------------------------    Desktops    ------------------------------------- */
 /* Large Desktop */
 /* Medium Desktop & iPad Pro Landscape */
@@ -421,9 +445,19 @@ footer {
   .collapse.in {
     display: block !important; }
 
-  .seccion-mis-servicios .col-md-4 {
+  .text-center-portrait {
     text-align: center; }
-    .seccion-mis-servicios .col-md-4 figure {
+
+  .margin-auto-portrait {
+    margin: auto; }
+
+  .margin-40px-portrait {
+    margin-bottom: 40px; }
+
+  .seccion-quien-soy .col-xs-6 {
+    width: 100%; }
+    .seccion-quien-soy .col-xs-6 img {
+      width: 50%;
       margin: auto; } }
 /* Galaxy Tab Portrait */
 /* iPad I/II Portrait */
@@ -433,10 +467,7 @@ footer {
     padding-bottom: 15px; }
 
   .correo {
-    text-align: center; }
-
-  #quien_soy img {
-    margin-bottom: 75px; } }
+    text-align: center; } }
 /* iPad I/II Portrait */
 @media only screen and (max-width: 767px) {
   .logo_nav a {
@@ -444,6 +475,10 @@ footer {
 
   .navbar-nav {
     margin-left: 0; }
+
+  ul, ol {
+    padding: 0;
+    list-style: none; }
 
   .seccion-portafolio .row {
     max-width: 480px;
@@ -465,7 +500,13 @@ footer {
     background-size: 100% 100%;
     height: 400px; } }
 /* iPhone 4 Landscape */
+@media only screen and (max-width: 480px) {
+  .seccion-quien-soy .col-xs-6 img {
+    width: 80%; } }
 /* iPhone 6+ Portrait */
+@media only screen and (max-width: 414px) {
+  .seccion-portafolio .portafolio-item {
+    width: 100%; } }
 /* iPhone 6 Portrait */
 /* iPhone 4/5 & Galaxy S3/S4/S5 Portrait */
 

@@ -4,18 +4,19 @@
             <div class="row">
                 <div class="col-md-4">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-5 text-center-portrait margin-40px-portrait">
                     <h2> Enlaces </h2>
                     <hr/>
                     
                     <ul>
-                        <li><a href="">Términos y Servicios </a></li>
-                        <li><a href="">Blog </a> </li>
-                        <li><a href="">Soporte </a> </li>
+                        <li><a href="#">Términos y Servicios </a></li>
+                        <li><a href="#">Blog </a> </li>
+                        <li><a href="#">Soporte </a> </li>
                     </ul>
                 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-5 col-md-offset-0 col-sm-offset-2 
+                text-center-portrait">
                     <h2> Contacto </h2>
                     <hr/>
                     <div class="row text-center">
