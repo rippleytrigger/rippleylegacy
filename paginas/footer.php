@@ -49,12 +49,12 @@
         <div class="container-fluid background-black">
             <div class="row text-center">
                     <div class="social_rrss col-md-4">
-                         <?php require 'includes/redes_s.php'; ?>
+                         <?php require 'includes/redes-sociales.php'; ?>
                     </div>
                      <div class="copyright col-md-6">
                           Copyright &copy; Rippleylegacy  <?php echo '('.date('Y').')'; ?>.  
                           Todos los derechos reservados.
-                     </div>
+                    </div>
             </div>
         </div>
     </footer>
@@ -68,9 +68,9 @@
     crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/bootstrap.min.js" async></script>
+    <script src="js/particles.min.js" async></script>
+    <script type="text/javascript" src="js/main.js" async></script>
 
     <?php require_once 'includes/google-analytics.php'; ?>
 

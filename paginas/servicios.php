@@ -57,20 +57,5 @@
 				</div>
 			</section>
 		</div>
-		<div class="row">
-			
-			<!--<section class="detalle-servicio col-md-5 col-md-offset-1 serv_">
-				<div class="text-center">
-					<figure class="icono-servicio ">
-						<i class="fa fa-globe fa-5x"></i>
-					</figure>
-				</div>
-				<div class="text">
-						
-					<h2>Dominios y Hostings web</h2>
-					<p> Realizo trámites de dominios y hostings webs </p>
-				</div>
-			</section>-->
-		</div>
 	</div>
 </article>

@@ -17,9 +17,8 @@
                 <h3>Establece un alcance mundial de tus productos y servicios.</h3>
 
                 <h2 class="brand-before">
-                    <small>A través del sitio Web Usted podrá llegar a clientes potenciales 
-                    del mundo entero. Las limitaciones geográficas ya no existen, un sitio Web es como 
-                    una oficina de ventas en cada lugar del planeta. </small>
+                    <small>A través de un sitio Web, se puede llegar a clientes potenciales del mundo entero, 
+                        permitiendote así establecer activamente tus servicios o productos globalmente. </small>
                 </h2>        
             </div>
         </div>

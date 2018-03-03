@@ -26,7 +26,7 @@
             </div>
             <div class="col-md-4 social_rrss">
 
-                <?php require_once 'includes/redes_s.php'; ?>
+                <?php require_once 'includes/redes-sociales.php'; ?>
 
             </div>
         </div>   
@@ -38,7 +38,7 @@
             <div class="navbar-header">
                             
                 <div class="logo_nav">
-                    <a href="index.php"> 
+                    <a href="http://rippleylegacy.com.ve"> 
                         RippleyLegacy
                     </a>
                 </div>

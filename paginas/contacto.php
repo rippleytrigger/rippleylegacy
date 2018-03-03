@@ -1,7 +1,7 @@
 	
 <!-- Contacto -->
 	<header class="jumbotron">
-    <h1 class="text-center">Contáctame</h1>
+    <h1 class="text-center">¿Quieres tener tu propio portal web?</h1>
 
       <p class="text-center">
       	Si estás interesado, no dudes en escribirme o llamarme  
@@ -10,23 +10,6 @@
       </p>
 
       <hr/>
-      <!--
-      <div class="col-md-6 col-xs-12">
-				<p id=" header" class="text-center align-middle">
-        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-        &nbsp; &nbsp; rippleytrigger@gmail.com</p>
-      </div>
-
-      <div class="col-md-6 col-xs-12">
-				<p class="text-center"><i class="fa fa-mobile fa-3x " aria-hidden="true">
-        </i>&nbsp; &nbsp; +58 424 - 2482023</p>
-      </div>-->
-
-      <!--<div class="row">
-		    <div class="text-center social_">
-		      <?php //require 'includes/redes_s.php'; ?>
-				</div>
-			</div>-->
       	
 			<div class="row">
 				<div class="col-md-4">
@@ -50,7 +33,6 @@
 
   <form class="form-horizontal" action="php/correo.php" method="post">
     <fieldset> 
-      <legend> <h1>Formulario de Contacto </h1></legend>
       <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">Correo</label>
         <div class="col-sm-7">

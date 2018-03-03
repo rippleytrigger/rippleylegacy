@@ -19,7 +19,7 @@
 	 </section>
 
 	  <section class="container-fluid seccion-quien-soy" id="quien_soy">
-		<?php require_once 'paginas/quien_soy.php'; ?> 	 	
+		<?php require_once 'paginas/quien-soy.php'; ?> 	 	
  	 </section>
 
 	 <section class="container-fluid img_2 seccion-mis-servicios" id="servicios">

@@ -10,6 +10,10 @@
 	</header>
 	
 		<div class="row">
+			<h2 class="margin-5 color-white">
+				Proyectos Realizados con Logoscorp
+				<hr/>
+			</h2>
 			<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 
 			margin-5 portafolio-item box-shadow-portfolio">
 				<div class="image-wrapper">

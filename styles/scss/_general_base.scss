@@ -107,9 +107,15 @@ a{
     letter-spacing: 3px;
 }
 
-.navbar-alternative li:not(.active) a:hover{
-    background: inherit;
-    color: $rippley-color-1;
+.navbar-alternative li:not(.active) a{
+    &:hover{
+        background: inherit;
+        color: $rippley-color-1;
+    }
+    &:focus{
+        background: inherit;
+        color: $rippley-color-1;
+    }
 }
 
 .navbar-alternative li.active{
@@ -117,14 +123,10 @@ a{
         transition: .3s;
         background: inherit;
         color: $rippley-color-1;
-        &:hover{
-            background: $rippley-color-3; 
-        }
-
+        
         &:before{
             width: 100%;
         }
-    
     }
 }
 
@@ -134,7 +136,7 @@ a{
     }
 
     .logo_nav a{
-        font-family: Allura;
+        font-family: "allura";
         font-size: 2.75em;
         letter-spacing: 5px;
         color: $rippley-color-2;
@@ -341,7 +343,7 @@ footer {
     .img_2{
         position: relative;
         height: auto;
-        background: url("../../img y videos/img_diseño/computadoras_conexion.png");
+        background: url("../../img y videos/img_diseño/computadoras_conexion.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;

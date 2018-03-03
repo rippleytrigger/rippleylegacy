@@ -2,17 +2,20 @@
 <html lang="es" xml:lang="es">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,PHP,JavaScript, Boostrap, Programación">
     <meta name="description" content="Página oficial de Marcos López">
     <meta name="google-site-verification" content="y9dpW3hRxy-2l74I225jwVp24K89BK48WC97yC5QIGs" />
     <meta name="author" content="Marcos López">
 
-      <title>Rippley Legacy</title>
+      <title>RippleyLegacy - Marcos López | Programador web especializado en Wordpress
+        y JavaScript.
+      </title>
   
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="styles/bootstrap-3.3.7-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css" crossorigin="anonymous">
 
     <link rel="icon" type="text/css" href="img y videos/favicon.ico">
 
