@@ -1,10 +1,10 @@
 
  <?php
 	//Avoiding Warnings - Uncomment if this script does not work properly
-	error_reporting(E_ERROR | E_PARSE);
+	//error_reporting(E_ERROR | E_PARSE);
 
 	extract($_POST);
-	
+
 	// Only process POST reqeusts.
 	if ($_SERVER["REQUEST_METHOD"] == "POST") 
 	{
