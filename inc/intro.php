@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-4 col-lg-4">
                 <img class="img-responsive thumbnail" 
-                src="img y videos/img_diseño/domain-2121820_1920.jpg">           
+                src="content/img_diseño/domain-2121820_1920.jpg">           
             </div>
             <div class="col-md-8 col-lg-8 jumbotron">
                 <h3>Establece un alcance mundial de tus productos y servicios.</h3>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-md-4">
                 <img class="img-responsive thumbnail" 
-                src="img y videos/img_diseño/sitio_web.jpg">                 
+                src="content/img_diseño/sitio_web.jpg">                 
             </div>
             <div class="col-md-8 jumbotron">
 
@@ -41,7 +41,7 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <img class="img-responsive thumbnail" src="img y videos/img_diseño/office-620822_1920.jpg"> 
+                <img class="img-responsive thumbnail" src="content/img_diseño/office-620822_1920.jpg"> 
             </div>
             <div class="col-md-8 jumbotron">
                 <h3>Reduce significativamente tus gastos operativos</h3>
@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col-md-4">
                 <img class="img-responsive thumbnail" 
-                src="img y videos/img_diseño/imagen_corporativa.jpg">
+                src="content/img_diseño/imagen_corporativa.jpg">
             </div>
             <div class="col-md-8 jumbotron">
                 <h3>Define la imagen profesional de tu empresa</h3>

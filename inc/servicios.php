@@ -12,7 +12,7 @@
 			<section class="detalle-servicio col-md-4 text-center-portrait margin-40px-portrait">
 				<div class="text-center">
 					<figure class="icono-servicio margin-auto-portrait">
-						<img src="img y videos/icono-consultoria.svg" alt="Consultoría" />
+						<img src="content/icono-consultoria.svg" alt="Consultoría" />
 					</figure>
 				</div>
 				<div class="text">
@@ -28,7 +28,7 @@
 			<section class="detalle-servicio col-md-4 text-center-portrait margin-40px-portrait">
 				<div class="text-center">
 					<figure class="icono-servicio margin-auto-portrait">
-						<img src="img y videos/icono-diseno.svg" alt="Diseño" />
+						<img src="content/icono-diseno.svg" alt="Diseño" />
 					</figure>
 				</div>
 				<div class="text">
@@ -44,7 +44,7 @@
 			<section class="detalle-servicio col-md-4 text-center-portrait margin-40px-portrait">
 				<div class="text-center">
 					<figure class="icono-servicio margin-auto-portrait">
-						<img src="img y videos/icono-desarrollo.svg" alt="Desarrollo" />
+						<img src="content/icono-desarrollo.svg" alt="Desarrollo" />
 					</figure>
 				</div>
 				<div class="text">

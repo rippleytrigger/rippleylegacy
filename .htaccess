@@ -1,5 +1,0 @@
- RewriteEngine On
-  RewriteCond %{HTTPS} !on
-  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-Redirect 301 /index.php https://rippleylegacy.com.ve/index.php

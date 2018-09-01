@@ -60,19 +60,27 @@
     </footer>
 
     <!-- jQuery -->
-    <!--<script src="js/jquery.js"></script>-->
 
     <script
     src="https://code.jquery.com/jquery-3.1.1.js"
     integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js" async></script>
-    <script src="js/particles.min.js" async></script>
-    <script type="text/javascript" src="js/main.js" async></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js" async></script>
+        <script src="js/particles.min.js" async></script>
+        <script type="text/javascript" src="js/main.js" async></script>
 
-    <?php require_once 'includes/google-analytics.php'; ?>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-96837178-1', 'auto');
+            ga('send', 'pageview');
+
+    </script>
 
     </body>
 </html>

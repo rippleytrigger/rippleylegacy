@@ -18,7 +18,7 @@
 			margin-5 portafolio-item box-shadow-portfolio">
 				<div class="image-wrapper">
 					<a href="http://universitas.ws02.logoscorp.com">
-						<img src="img y videos/universitas.jpg" 
+						<img src="content/universitas.jpg" 
 						class="portafolio-img-background img-responsive" alt="Image" />
 					</a>
 				</div>
@@ -27,7 +27,7 @@
 			box-shadow-portfolio">
 				<div class="image-wrapper">
 					<a href="http://mydrkids.com">
-						<img src="img y videos/drkids.jpg" 
+						<img src="content/drkids.jpg" 
 						class="portafolio-img-background
 						img-responsive" alt="Image" />
 					</a>
@@ -37,7 +37,7 @@
 			 box-shadow-portfolio">
 				<div class="image-wrapper">
 					<a href="http://logoscorp.com/en/" >
-						<img src="img y videos/logoscorp.jpg" 
+						<img src="content/logoscorp.jpg" 
 						class="img-responsive
 						portafolio-img-background" alt="Image" />
 					</a>
@@ -47,7 +47,7 @@
 			box-shadow-portfolio">
 				<div class="image-wrapper">
 					<a href="http://lifeinvestasset.com/en/">
-						<img src="img y videos/lifeinvest.jpg" 
+						<img src="content/lifeinvest.jpg" 
 						class="img-responsive portafolio-img-background" 
 						alt="Image" />
 					</a>
@@ -66,7 +66,7 @@
 								<div class="portafolio-frontground-img">
 									<h2>Dr.Kids</h2>
 								</div>
-								<img src="img y videos/logoscorp.jpg" 
+								<img src="content/logoscorp.jpg" 
 								class="img-responsive
 								portafolio-img-background" alt="Image" />
 							</a>
@@ -78,7 +78,7 @@
 								<div class="portafolio-frontground-img">
 									<h2>Dr.Kids</h2>
 								</div>
-								<img src="img y videos/lifeinvest.jpg" 
+								<img src="content/lifeinvest.jpg" 
 								class="img-responsive portafolio-img-background" 
 								alt="Image" />
 							</a>
@@ -90,7 +90,7 @@
 								<div class="portafolio-frontground-img">
 									<h2>Dr.Kids</h2>
 								</div>
-								<img src="img y videos/jobsupply_banner.jpg" 
+								<img src="content/jobsupply_banner.jpg" 
 								class="img-responsive portafolio-img-background" 
 								alt="Image" />
 							</a>

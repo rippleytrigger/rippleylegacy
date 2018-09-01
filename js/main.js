@@ -1,105 +1,64 @@
 		
 		'use_strict';
 	
-	//Variables		
-		//Window modal - Habilidades
+	
+	
+		function sum_validation_contact()
+		{
+			//Validacion de suma - contacto - variables
+			let num1 = Math.ceil(Math.random() * 10);
+			let num2 = Math.ceil(Math.random() * 10);
+			let total = (num1 + num2);
 
-		var hab_;
-		var hab_t;
-		var barra = 0;
-		var int;
-		var barra_p = $("#barra_p");
+			//Selectors
+			let suma = $("#suma_label");
+			let suma_caja = $("input#suma");
+			let contact_form = $(".form-horizontal");
+			let mensaje_num = $("#mensaje_num");   
 
-		//Validacion de suma - contacto - variables
-		 var num1 = Math.ceil(Math.random() *10) 
-		 var num2 = Math.ceil(Math.random() *10);
-
-		 var total = (num1 + num2);
-		 var suma = $("#suma_label")
-		 var suma_caja = $("input#suma")
-		 var contacto = $(".form-horizontal");
-		 var mensaje_num = $("#mensaje_num");
-
-		 //Portafolio - variables
-
-		 var img_portafolio = $(".img_port");
-		 var info_portafolio = $(".info_port");
-
-		 //Funciones portafolio
-		function img_info_portafolio (e){
-
-			var img_;
-			 
-		 	switch(e){
-		 	 	case "img_1":
-					img_ = "1";		 	 	
-		 	 	break;
-
-		 	 	case "img_2":
-		 	 		img_ = "2";
-		 	 	break;
-
-		 	 	case "img_3":
-		 	 		img_ = "3";
-		 	 	break;
-		 	}
-
-		 	var ancho_img_port = $("#"+ img_).parent().width();
-
-		 	$("#"+img_).fadeIn().animate({ "width": ancho_img_port, "color": "white"}, 500);	
-		}
-
-		function none_info_port(){
-			info_portafolio.animate({ "width": "0%", "color": "none"}, 500).fadeOut().removeClass("text_port");
-		}
-
-		 /* Fin */
-
-		 //Validacion de suma - contacto - funcion
-		function validacion_suma (){
 		 	suma.text(num1 + " + " + num2)	
-		 	contacto.submit(function(event){
+			contact_form.submit(function(event)
+			{
+				//Avoid sending the form. I am going to handle the server response via ajax
+				event.preventDefault();
 
-		 		if (isNaN(suma_caja.val())) {
+				if(isNaN(suma_caja.val())) 
+				{
 		 			mensaje_num.removeClass("alert alert-success")
 		 			mensaje_num.addClass("alert alert-danger");
 		 			mensaje_num.text("Coloque un número");
-		 			event.preventDefault();
+		 			
 		 		}
-
-		 		else if (suma_caja.val() != total ) {
+				else if(suma_caja.val() != total) 
+				{
 		 			mensaje_num.removeClass("alert alert-success");
 		 			mensaje_num.addClass("alert alert-danger");
 		 			mensaje_num.text("El número ingresado es incorrecto");
-		 			event.preventDefault();
-		 		}else{
+				
+				}
+				else
+				{
 		 			mensaje_num.removeClass("alert alert-danger");
 		 			mensaje_num.addClass("alert alert-success");
-		 			mensaje_num.text("El número ingresado es correcto");
+				 	mensaje_num.text("El número ingresado es correcto");
+					 
+					//Establish the AJAX Call
+					ajax_call_contact_form(this)
 		 		}	
 		 	})	
 		 }
 
-		//Window modal - Habilidades - funciones 	
-		function modal_close(){
-			barra = 0;
-			barra_p.css({ width: 0 + "%" , color: "transparent"});
-		}
+		function nav_navigate()
+		{
+			let navbarAnchors = $("#nav_links").find("a");
 
-		function modal_progress (){
-			barra_p.css({width: barra + "%", color: "white"});
-			$("#habilidad").html(hab_t);
-			barra_p.html(hab_ + "%");
-		}
+			navbarAnchors.on("click",function(event)
+			{
+				let navAnchorTarget = event.target.id;
+				let scrollTarget;
 
-		function nav_navigate(){
-			var navbarAnchors = $("#nav_links").find("a");
-
-			navbarAnchors.on("click",function(event){
-				var navAnchorTarget = event.target.id;
-				var scrollTarget;
-
-				switch(navAnchorTarget){
+				switch(navAnchorTarget)
+				{
 					case "nav_link_1":
 					scrollTarget = $('#inicio').offset();
 					$("html, body").animate({scrollTop: scrollTarget.top}, 500);
@@ -128,55 +87,53 @@
 			})
 		}
 
-		//responsive
-		var l;
-		var width_window = $(window).width();
-		function responsive (){ 
-			// l
-			l = (width_window > 768)? l=0 : (width_window < 768 && width_window > 500)? l=1: l=2;
-			width_window = $(window).width();
-			//console.log(l, $('serv_').children())
+		function ajax_call_contact_form(form)
+		{
+			//Container where we are going to receive the mail responses from the server
+			let respuesta_form_contacto = $('#respuesta_form_contacto');
 
-			if (l == 0 && width_window > 768){
-				//$('#serv_').children().removeClass('resp_');
-				$('#serv_').find('span').addClass('fa-pull-left');
+			//Serialize the form data to prepare it to be receive by the server 
+			form = $(form).serialize();
 
-			}else if( l == 1 && width_window < 768 && width_window > 500 ){
-				//$('#serv_').children().addClass('resp_');
-				$('.serv_').find('.detalle-servicio').removeClass('.col-xs-offset-1');
-				//$('#serv_').find('span').removeClass('fa-pull-center');
+			//Msg Variable
+			let mensaje;
 
-			}else if (  l == 2 && width_window < 500){
-				$('#serv_').find('span').removeClass('fa-pull-left');
-				$('#serv_').children().addClass('text-center');
-			}
+			$.ajax(
+				{	
+					type: "POST",
+					url: "inc/correo.php", 
+					data: form,	
+				}
+			)
+			.done(function(result)
+			{
+				console.log(result)
+				//Put Success Message
+				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-success text-center' id='mensaje_num'> <span> ${result.responseText} </span>  </div> </div>`;
+				respuesta_form_contacto.html(mensaje);
+			})
+			.fail(function(result)
+			{
+				console.log(result);
+				//Put Fail Message 
+				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span>${result.responseText}</span>  </div> </div>`;
+				respuesta_form_contacto.html(mensaje);
+			})
 		}
-
-		//Eventos
-		$(document).ready(function(){
-			nav_navigate();
-			responsive();
-
-			$(".img_port").on("mouseover",function(event){
-				var evento = event.target.id;
-				img_info_portafolio(evento);
-			});
+			
 		
-			info_portafolio.on("mouseleave",function(){
-				none_info_port()
-			});	
-
-			$(window).on('resize', responsive);
-		})
 
 
-		$(window).on("load",function(){
-			/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-			particlesJS.load('intro', 'js/particles.json', function() {
-			console.log('callback - particles.js config loaded');
-  			});
-			//Validación de Formularios
-			validacion_suma ();
+		$(window).on("load",function()
+		{
+			particlesJS.load('intro', 'js/particles.json', function() 
+			{
+				console.log('callback - particles.js config loaded');
+			});
+
+			nav_navigate()
+			
+			sum_validation_contact();
 		})
 
 

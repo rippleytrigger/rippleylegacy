@@ -19,7 +19,7 @@
 
 	<div class="row">
 		<div class="col-md-4 col-sm-6 col-xs-6 margin-40px-portrait">
-		 	<img class="img-responsive img-rounded" src="img y videos/link.jpg">
+		 	<img class="img-responsive img-rounded" src="content/link.jpg">
 		</div>
 
 		<div class="col-md-8 col-sm-12 col-xs-12 text-justify color-white">

@@ -31,7 +31,7 @@
 
 <div class="well collapse" id="formulario_cont"> 
 
-  <form class="form-horizontal" action="php/correo.php" method="post">
+  <form class="form-horizontal" action="#" method="post">
     <fieldset> 
       <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">Correo</label>
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" id="respuesta_form_contacto">
         <?php 
             error_reporting(E_ALL ^ E_NOTICE);
           if (isset($_GET['s'])) 
