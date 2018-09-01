@@ -3,6 +3,7 @@
 	//Avoiding Warnings - Uncomment if this script does not work properly
 	error_reporting(E_ERROR | E_PARSE);
 
+	extract($_POST);
 	
 	// Only process POST reqeusts.
 	if ($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -25,7 +26,7 @@
 			exit;
 		}	 
 
-		extract($_POST);
+		
 		$mensaje_correo = "Nombre:".$nombre."\n"."\n";
 		$mensaje_correo .= "Correo:"." ".$correo."\n"."\n";
 		$mensaje_correo .= "Número:".$numero."\n"."\n";
