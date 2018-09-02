@@ -42,7 +42,7 @@
 		 			mensaje_num.addClass("alert alert-success");
 				 	mensaje_num.text("El número ingresado es correcto");
 					 
-					//Establish the AJAX Call
+					//Establish the AJAX Call to send the form data
 					ajax_call_contact_form(this)
 		 		}	
 		 	})	
@@ -93,7 +93,7 @@
 			let respuesta_form_contacto = $('#respuesta_form_contacto');
 
 			//Serialize the form data to prepare it to be receive by the server 
-			form = $(form).serialize();
+			formData = $(form).serialize();
 
 			//Msg Variable
 			let mensaje;
@@ -102,7 +102,7 @@
 				{	
 					type: "POST",
 					url: "functionalities/correo.php", 
-					data: form,	
+					data: formData,	
 				}
 			)
 			.done(function(result)
@@ -110,6 +110,7 @@
 				console.log(result)
 				//Put Success Message
 				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-success text-center' id='mensaje_num'> <span> ${result.responseText} </span>  </div> </div>`;
+				close_contact_form(form)
 				respuesta_form_contacto.html(mensaje);
 			})
 			.fail(function(result)
@@ -118,11 +119,21 @@
 				//Put Fail Message 
 				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span>${result.responseText}</span>  </div> </div>`;
 				respuesta_form_contacto.html(mensaje);
+				close_contact_form(form)
 			})
 		}
 			
-		
+		function close_contact_form(form)
+		{
+			// Fade Out the form and Delete it when it receives the ajax response
+			$(form).fadeOut(2000);
+			$(form).remove();
+		}
 
+		$(document).on("ready",function()
+		{
+		
+		})
 
 		$(window).on("load",function()
 		{

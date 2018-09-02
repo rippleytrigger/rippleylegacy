@@ -93,24 +93,9 @@
         </div>
       </div>
 
-      <div class="form-group" id="respuesta_form_contacto">
-        <?php 
-            error_reporting(E_ALL ^ E_NOTICE);
-          if (isset($_GET['s'])) 
-          {
-            $s = $_GET['s'];
-          }
-          if ($s == 1) 
-          {
-            $mensaje = "<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-success text-center' id='mensaje_num'> <span> Se pudo enviar el correo </span>  </div> </div>";
-
-          }else if($s == 2)
-          {
-            $mensaje = "<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span> No se pudo enviar el correo</span>  </div> </div>";
-          }
-          echo $mensaje;
-        ?>
-      </div>
     </fieldset>
   </form> 
+
+  <div class="form-group" id="respuesta_form_contacto">
+  </div>
 </div>
