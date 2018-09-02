@@ -114,9 +114,8 @@
 			})
 			.fail(function(result)
 			{
-				console.log(result)
 				//Put Fail Message 
-				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span>${result}</span>  </div> </div>`;
+				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span>${result.responseText}</span>  </div> </div>`;
 				respuesta_form_contacto.html(mensaje);
 				close_contact_form(form);
 			})
