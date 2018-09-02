@@ -1,5 +1,4 @@
-
- <?php
+<?php
 	//Avoiding Warnings - Uncomment if this script does not work properly
 	//error_reporting(E_ERROR | E_PARSE);
 
@@ -31,21 +30,9 @@
 		$mensaje_correo .= "Correo:"." ".$correo."\n"."\n";
 		$mensaje_correo .= "Número:".$numero."\n"."\n";
 		$mensaje_correo .= "Mensaje:".$mensaje."\n"."\n";
+		
+		require 'mailer.php';
 
-		$email_principal = "info@rippleylegacy.com.ve";
-	
-		if(mail($email_principal,$asunto,$mensaje_correo))
-		{ 
-			http_response_code(200);
-			echo "Se pudo enviar el correo!!!";
-			exit();
-		}
-		else
-		{ 
-			http_response_code(400);
-			echo "No se pudo enviar su correo. Inténtelo más tarde";
-			exit();
-		} 
 	}
 	else
 	{

@@ -101,7 +101,7 @@
 			$.ajax(
 				{	
 					type: "POST",
-					url: "inc/correo.php", 
+					url: "functionalities/correo.php", 
 					data: form,	
 				}
 			)
