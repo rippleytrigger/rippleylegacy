@@ -7,7 +7,6 @@
      */
     //Import PHPMailer classes into the global namespace
 
-    //require 'correo.php';
 
     $email_principal = "rippleytrigger@gmail.com";
 
@@ -41,8 +40,6 @@
     //Set who the message is to be sent from
     $mail->setFrom($email_principal, 'Rippleylegacy');
    
-    var_dump($mail);
-
     //Set who the message is to be sent to
     $mail->addAddress($correo, $nombre);
     //Set the subject line
