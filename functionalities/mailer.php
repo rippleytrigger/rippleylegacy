@@ -7,7 +7,7 @@
      */
     //Import PHPMailer classes into the global namespace
 
-   // require 'correo.php';
+    //require 'correo.php';
 
     $email_principal = "rippleytrigger@gmail.com";
 
@@ -41,15 +41,15 @@
     //Set who the message is to be sent from
     $mail->setFrom($email_principal, 'Rippleylegacy');
    
-    //var_dump($mail);
+    var_dump($mail);
 
     //Set who the message is to be sent to
-    $mail->addAddress("rippleytrigger@hotmail.com", "Epale");
+    $mail->addAddress($correo, $nombre);
     //Set the subject line
-    $mail->Subject = "Epale";
+    $mail->Subject = $asunto;
     //Read an HTML message body from an external file, convert referenced images to embedded,
     //convert HTML into a basic plain-text alternative body
-    $mail->msgHTML("epale 123");
+    $mail->msgHTML($mensaje_correo);
 
     if(!$mail->send())
     { 
@@ -63,3 +63,4 @@
         echo "No se pudo enviar su correo. Inténtelo más tarde";
         exit();
     } 
+?>
