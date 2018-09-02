@@ -284,7 +284,6 @@ footer .copyright {
     font-size: 1.25em;
   }
 }
-/* Propios */
 /*Header top  */
 .contact_info, .social_rrss {
   margin-top: 15px;
@@ -348,6 +347,10 @@ footer .copyright {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#respuesta_form_contacto {
+  min-height: 40px;
 }
 
 @media screen and (min-width: 1200px) {

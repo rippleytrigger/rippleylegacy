@@ -107,19 +107,17 @@
 			)
 			.done(function(result)
 			{
-				console.log(result)
 				//Put Success Message
-				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-success text-center' id='mensaje_num'> <span> ${result.responseText} </span>  </div> </div>`;
-				close_contact_form(form)
+				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-success text-center' id='mensaje_num'> <span> ${result} </span>  </div> </div>`;
 				respuesta_form_contacto.html(mensaje);
+				close_contact_form(form);
 			})
 			.fail(function(result)
 			{
-				console.log(result);
 				//Put Fail Message 
-				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span>${result.responseText}</span>  </div> </div>`;
+				mensaje = `<div class='col-sm-offset-4 col-sm-4'> <div class='alert alert-danger text-center' id='mensaje_num'> <span>${result}</span>  </div> </div>`;
 				respuesta_form_contacto.html(mensaje);
-				close_contact_form(form)
+				close_contact_form(form);
 			})
 		}
 			
@@ -132,7 +130,7 @@
 
 		$(document).on("ready",function()
 		{
-		
+			nav_navigate()
 		})
 
 		$(window).on("load",function()
@@ -142,8 +140,6 @@
 				console.log('callback - particles.js config loaded');
 			});
 
-			nav_navigate()
-			
 			sum_validation_contact();
 		})
 
