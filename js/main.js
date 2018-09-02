@@ -128,7 +128,7 @@
 			$(form).remove();
 		}
 
-		$(document).on("ready",function()
+		$(document).ready(function()
 		{
 			nav_navigate()
 		})
