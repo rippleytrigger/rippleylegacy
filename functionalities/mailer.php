@@ -48,14 +48,14 @@
 
     if(!$mail->send())
     { 
-        http_response_code(200);
-        echo "Se pudo enviar el correo!!!";
+        http_response_code(400);
+        echo "No se pudo enviar su correo. Inténtelo más tarde";
         exit();
     }
     else
     { 
-        http_response_code(400);
-        echo "No se pudo enviar su correo. Inténtelo más tarde";
+        http_response_code(200);
+        echo "Se pudo enviar el correo!!!";
         exit();
     } 
 ?>
