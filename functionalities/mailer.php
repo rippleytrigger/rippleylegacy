@@ -7,8 +7,8 @@
      */
     //Import PHPMailer classes into the global namespace
 
-
-    $email_principal = "rippleytrigger@gmail.com";
+    //Email to send the content
+    $email_principal = "";
 
     use PHPMailer\PHPMailer\PHPMailer;
     require '../vendor/autoload.php';
@@ -34,7 +34,7 @@
     //Username to use for SMTP authentication - use full email address for gmail
     $mail->Username = $email_principal;
     //Password to use for SMTP authentication
-    $mail->Password = "chinatown26334780&";
+    $mail->Password = "";
     //Set who the message is to be sent from
     $mail->setFrom($email_principal, 'Rippleylegacy');
    
